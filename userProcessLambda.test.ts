@@ -18,20 +18,20 @@ test("Valid and invalid users", async () => {
         gender: "Male",
         agreedToTerms: true,
       },
-      // {
-      //   id: "2", 
-      //   name: "",
-      //   email: "invalid-email",
-      //   age: 17,
-      //   phoneNumber: "12345",
-      //   address: {
-      //     street: "",
-      //     city: "",
-      //     zipCode: "abcde",
-      //   },
-      //   gender: "Invalid",
-      //   agreedToTerms: false,
-      // },
+      {
+        id: "2", 
+        name: "",
+        email: "invalid-email",
+        age: 17,
+        phoneNumber: "12345",
+        address: {
+          street: "",
+          city: "",
+          zipCode: "abcde",
+        },
+        gender: "Invalid",
+        agreedToTerms: false,
+      },
     ],
   };
 
