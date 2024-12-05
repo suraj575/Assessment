@@ -3,7 +3,7 @@ import { handler } from "./userProcess";
 
 test("Valid and invalid users", async () => {
   const event = {
-    users: [
+    body: JSON.stringify([
       {
         id: "1", 
         name: "Suraj Pawar",
@@ -32,7 +32,8 @@ test("Valid and invalid users", async () => {
         gender: "Invalid",
         agreedToTerms: false,
       },
-    ],
+    ],)
+    
   };
 
   const result = await handler(event);

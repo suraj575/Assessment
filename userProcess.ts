@@ -27,8 +27,8 @@ interface ValidationResult {
   errors: string[];
 }
 
-export const handler = async (event: { users: User[] }) => {
-  const { users } = event;
+export const handler = async (event: { body: string }) => {
+  const users: User[] = JSON.parse(event.body);
   // console.log("User--->", users)
   if (!Array.isArray(users)) {
     return {
